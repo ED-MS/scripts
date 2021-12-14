@@ -45,7 +45,7 @@ fi
 RAVEDUDE_URL=https://github.com/ED-MS/avr-hal/releases/download/v0.1.3/ravedude-macos-latest.zip
 ZIP_TARGET=/tmp/avrdude.zip
 
-wget -q $RAVEDUDE_URL -O $ZIP_TARGET
+curl -Lp --progress-bar $RAVEDUDE_URL --output $ZIP_TARGET
 
 # ls -alh $ZIP_TARGET
 unzip -o $ZIP_TARGET
