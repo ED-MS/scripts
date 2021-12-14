@@ -8,7 +8,7 @@ FIRMWARE=${1:-$HOME/Downloads/firmware.elf}
 which avrdude > /dev/null 2>&1
 if [[ $? -ne 0 ]]; then
     echo "ℹ️  Installing avrdude if not already installed..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$(curl -fsSL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew install avrdude
 fi
 
