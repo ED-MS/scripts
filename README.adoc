@@ -1,0 +1,7 @@
+= EDMS Installer
+
+== MacOS
+
+Run the following command:
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)"
