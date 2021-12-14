@@ -2,8 +2,7 @@
 
 == MacOS
 
-Download your firmware and make note of the location. 
-Here we assume the firmware has been downloaded in the default `Downloads` folder.
+Download your firmware and store in under your `Downloads` folder as `firmware.elf`.
 
 Run the following command:
 
