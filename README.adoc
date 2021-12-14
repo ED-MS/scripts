@@ -6,5 +6,6 @@ Download your firmware and make note of the location.
 Here we assume the firmware has been downloaded in the default `Downloads` folder.
 
 Run the following command:
+
     FIRMWARE=$HOME/Downloads/firmware.elf
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)" $FIRMWARE
