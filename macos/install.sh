@@ -3,7 +3,7 @@
 # set -e
 echo "EDMS Installer"
 
-FIRMWARE=$1
+FIRMWARE=${1:-$HOME/Downloads/firmware.elf}
 
 which avrdude > /dev/null 2>&1
 if [[ $? -ne 0 ]]; then
