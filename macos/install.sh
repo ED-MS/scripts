@@ -50,6 +50,7 @@ curl -Lp --progress-bar $RAVEDUDE_URL --output $ZIP_TARGET
 # ls -alh $ZIP_TARGET
 unzip -o $ZIP_TARGET
 chmod a+x ravedude
+mv ravedude /usr/local/bin
 
 ravedude --version
 if [[ $? -eq 0 ]]; then
@@ -63,7 +64,6 @@ echo "⚠️ You are about to upload a new firmware from $FIRMWARE"
 read -p "You may abort NOW with CTRL+C. Press ENTER to continue"
 
 echo "Updating firmware, please wait..."
-
 ravedude mega2560 $FIRMWARE
 
 if [[ $? -eq 0 ]]; then
