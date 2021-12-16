@@ -60,6 +60,9 @@ else
     exit 1
 fi
 
+echo "Arduino USB ports:"
+ls -al /dev/cu.usb*
+
 echo "⚠️ You are about to upload a new firmware from $FIRMWARE"
 read -p "You may abort NOW with CTRL+C. Press ENTER to continue"
 
