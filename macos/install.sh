@@ -2,6 +2,8 @@
 
 # set -e
 echo "EDMS Installer"
+echo "Start date/time"
+date
 
 FIRMWARE=${1:-$HOME/Downloads/firmware.elf}
 
@@ -42,6 +44,9 @@ else
     exit 1
 fi
 
+echo "Date/time"
+date
+
 RAVEDUDE_URL=https://github.com/ED-MS/avr-hal/releases/download/v0.1.3/ravedude-macos-latest.zip
 ZIP_TARGET=/tmp/avrdude.zip
 
@@ -75,3 +80,6 @@ else
     echo "❌ The update failed with code $?"
     exit 1
 fi
+
+echo "End date/time"
+date
