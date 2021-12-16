@@ -11,3 +11,11 @@ Run the following command:
 If you run into issues, please try:
 
     /bin/bash -c "$(curl -fsSL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)" 2>&1 | tee /tmp/edms.log
+
+== Troubleshooting
+
+If something goes wrong and/or you need help, please run the following command:
+
+    open -a Mail /tmp/edms.log
+
+It will create a new email and attach the logs to it.
