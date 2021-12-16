@@ -6,8 +6,8 @@ Download your firmware and store in under your `Downloads` folder as `firmware.e
 
 Run the following command:
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)" 2>&1 | tee /tmp/edms.log
 
 If you run into issues, please try:
 
-    /bin/bash -c "$(curl -fsSL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)"
+    /bin/bash -c "$(curl -fsSL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/ED-MS/scripts/master/macos/install.sh)" 2>&1 | tee /tmp/edms.log
