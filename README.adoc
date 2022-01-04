@@ -1,4 +1,8 @@
 = EDMS Installer
+:sectnums:
+:sectanchors:
+:sectlinks:
+:toc: right
 
 == MacOS
 
@@ -16,48 +20,48 @@ If you run into issues, please try:
 
 3 steps (the 2 first steps have to be done only the first time):
 
-1) Install AVRDUDESS on your PC
+=== Install AVRDUDESS on your PC
 
-- Download latest Windows installer on :
-https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/
+- Download latest
+https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/[windows installer]
 
 - Launch the downloaded .exe file
 
 - Follow the instructions to install AVRDUDESS software
 
-2) Configure AVRDUDESS
+=== Configure AVRDUDESS
 
 - Start AVRDUDESS
 
 - Fill the following fields as follow :
 
-* Programmer (-c) : Arduino
+* Programmer (-c) : `Arduino`
 
-* Baud rate (-b) : 115200
+* Baud rate (-b) : `115200`
 
-* MCU (-p) : ATmega2560
+* MCU (-p) : `ATmega2560`
 
-* Select "Disable flash erase (-D)"
+* Select `Disable flash erase (-D)`
 
-* Additional command line args : -cwiring
+* Additional command line args : `-cwiring`
 
-image::Capture1.JPG
+image::Capture1.JPG[]
 
-3) Upload the firmware in your labeller
+=== Upload the firmware in your labeller
 
 - Switch Off the labeller
 
 - Connect the labeller with your PC using USB cable
 
-- In AVRDUDESS, select the COMx port on field "Port (-P)"
+- In AVRDUDESS, select the COMx port on field `Port (-P)`
 
-- On field "Flash" and using the "3 points button", select the firmware.hex file
+- On field `Flash` and using the `3 points button`, select the `firmware.hex` file
 
-- Click on "Program!" icon
+- Click on `Program!` icon
 
 - If the upload is successful, the message is the following
 
-image::Capture2.JPG
+image::Capture2.JPG[]
 
 - Unplug the USB cable
 
