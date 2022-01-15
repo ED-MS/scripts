@@ -18,7 +18,16 @@ If you run into issues, please try:
     
 == Windows
 
-3 steps (the 2 first steps have to be done only the first time):
+4 steps (the 3 first steps have to be done only the first time):
+
+=== Install IDE Arduino on your PC
+
+- Download latest
+https://www.arduino.cc/en/software/[windows installer]
+
+- Launch the downloaded .exe file
+
+- Follow the instructions to install ARDUINO software
 
 === Install AVRDUDESS on your PC
 
